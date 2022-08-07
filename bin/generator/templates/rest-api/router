@@ -1,8 +1,5 @@
-import express     from 'express';
 import controllers from './controllers/index.mjs';
 
-const router = express.Router();
-
-const checkSession = controllers.sessions.check;
-
-export default router;
+export default async (router) => {
+    const checkSession = controllers.sessions.check;
+};
